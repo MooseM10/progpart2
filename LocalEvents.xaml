@@ -1,0 +1,53 @@
+﻿<Window x:Class="MunicipalityApp.LocalEvents"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MunicipalityApp"
+        mc:Ignorable="d"
+        Title="LocalEvents" Height="450" Width="800">
+    <Grid>
+        <!-- Title -->
+        <TextBlock Text="EventsAnnouncements" FontSize="24" 
+                   HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,10,0,0"/>
+        <!-- Search Bar -->
+
+        <!-- Category Dropdown -->
+        <ComboBox Name="categoryDropdown" Width="200" Height="30" VerticalAlignment="Top" 
+                  HorizontalAlignment="Right" Margin="0,60,50,0">
+            <ComboBoxItem Content="Sports"/>
+            <ComboBoxItem Content="Meetings"/>
+            <ComboBoxItem Content="Concerts"/>
+            <ComboBoxItem Content="Functions"/>
+            <ComboBoxItem Content="Other"/>
+        </ComboBox>
+        <Label Content="Search for events..."
+               FontSize="20"
+               FontWeight="Bold"
+               HorizontalAlignment="Left"
+               VerticalAlignment="Top"
+               Margin="20,56,0,0"/>
+        <!-- Date Picker -->
+        <DatePicker Name="datePicker" Width="250" Height="30" VerticalAlignment="Top" 
+                    HorizontalAlignment="Left" Margin="251,59,0,0"/>
+        <!-- Search Button -->
+        <Button Content="Search" Width="100" Height="30" VerticalAlignment="Top" 
+                HorizontalAlignment="Right" Margin="0,110,50,0" Click="OnSearchClick"/>
+
+        <Button Content="Recommend" Height="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="540,111,0,0" Click="Button_Click"/>
+
+        <Button x:Name="btnReset" Content="Reset List" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="456,116,0,0" Click="btnReset_Click"/>
+        <!-- Results Area -->
+        <ListView Name="resultsListView" VerticalAlignment="Bottom" Height="200" 
+                  HorizontalAlignment="Stretch" Margin="10,150,10,10">
+            <!-- Template for showing search results -->
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Event" DisplayMemberBinding="{Binding Name}" Width="150"/>
+                    <GridViewColumn Header="Category" DisplayMemberBinding="{Binding Category}" Width="150"/>
+                    <GridViewColumn Header="Date" DisplayMemberBinding="{Binding Date, StringFormat=\{0:MM/dd/yyyy\}}" Width="100"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </Grid>
+</Window>
