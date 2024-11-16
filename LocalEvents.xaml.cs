@@ -20,11 +20,7 @@ namespace MunicipalityApp
     /// </summary>
     public partial class LocalEvents : Window
     {
-        //private SortedDictionary<DateTime, List<Event>> eventsDict = new SortedDictionary<DateTime, List<Event>>();
-        //private ObservableCollection<Event> displayedEvents;
-        //private HashSet<string> eventCategories = new HashSet<string> { "Sports", "Meetings", "Concerts", "Functions", "Other" };
-        //private Stack<string> searchHistory = new Stack<string>(); // Store recent search queries
-        //private SortedDictionary<string, List<Event>> eventCollection = new SortedDictionary<string, List<Event>>();
+       
         private SortedDictionary<DateTime, List<Event>> eventsDict = new SortedDictionary<DateTime, List<Event>>();
         private ObservableCollection<Event> displayedEvents = new ObservableCollection<Event>();
         private HashSet<string> eventCategories = new HashSet<string> { "Sports", "Meetings", "Concerts", "Functions", "Other" };

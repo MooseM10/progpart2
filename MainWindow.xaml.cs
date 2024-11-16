@@ -37,6 +37,13 @@ namespace MunicipalityApp
             reportIssueWindow.ShowDialog();
         }
 
+        private void ServiceRequestStatusButton_Click(object sender, RoutedEventArgs e)
+        {
+            ServiceRequestStatusWindow statusWindow = new ServiceRequestStatusWindow();
+            statusWindow.ShowDialog();
+        }
+
+
         // Method to add a report to the list
         public void AddReport(Report report)
         {
@@ -44,10 +51,12 @@ namespace MunicipalityApp
             MessageBox.Show("Report successfully added. Total reports: " + reports.Count);
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void AddReportButton_Click(object sender, RoutedEventArgs e)
         {
             LocalEvents localEvents = new LocalEvents();
             localEvents.ShowDialog();
         }
+
+
     }
 }

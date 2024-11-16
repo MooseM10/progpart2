@@ -19,8 +19,8 @@
         <!-- Buttons -->
         <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Width="200">
             <Button Content="Report An Issue" Height="80" Margin="0,10" FontSize="16" Click="ReportIssueButton_Click"/>
-            <Button Content="Local Events" Height="80" Margin="0,10" FontSize="16" Click="Button_Click"/>
-            <Button Content="Service Request Status" Height="80" Margin="0,10" FontSize="16"/>
+            <Button Content="Local Events" Height="80" Margin="0,10" FontSize="16" Click="AddReportButton_Click"/>
+            <Button Content="Service Request Status" Height="80" Margin="0,10" FontSize="16" Click="ServiceRequestStatusButton_Click"/>
         </StackPanel>
 
         <!-- Close Button -->

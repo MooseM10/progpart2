@@ -1,0 +1,23 @@
+﻿<Window x:Class="MunicipalityApp.ServiceRequestStatusWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MunicipalityApp"
+        mc:Ignorable="d"
+       Title="Service Request Status" Height="350" Width="600">
+    <Grid>
+        <!-- Buttons -->
+        <Button Content="Show All Requests" HorizontalAlignment="Left" VerticalAlignment="Top" Width="150" Height="30" Margin="10,10,0,0" Click="ShowAllRequests_Click"/>
+        <Button Content="Show Related Requests" HorizontalAlignment="Left" VerticalAlignment="Top" Width="150" Height="30" Margin="10,50,0,0" Click="ShowRelatedRequests_Click"/>
+
+        <!-- AVL Tree Display (Sorted Service Requests) -->
+        <ListBox Name="avlTreeDisplay" HorizontalAlignment="Left" Height="150" Margin="10,90,10,10" VerticalAlignment="Top" Width="250"/>
+
+        <!-- Heap Display (Priority-based Service Requests) -->
+        <ListBox Name="heapDisplay" HorizontalAlignment="Left" Height="150" Margin="270,90,10,10" VerticalAlignment="Top" Width="250"/>
+
+        <!-- Graph Display (Service Request Relationships) -->
+        <ListBox Name="serviceRequestGraphDisplay" HorizontalAlignment="Left" Height="150" Margin="10,250,10,10" VerticalAlignment="Top" Width="500"/>
+    </Grid>
+</Window>

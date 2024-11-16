@@ -57,6 +57,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="AVLTree.cs" />
     <Compile Include="Event.cs" />
     <Compile Include="FeedbackForm.cs">
       <SubType>Form</SubType>
@@ -64,12 +65,18 @@
     <Compile Include="FeedbackForm.Designer.cs">
       <DependentUpon>FeedbackForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Graph.cs" />
+    <Compile Include="Heap.cs" />
     <Compile Include="LocalEvents.xaml.cs">
       <DependentUpon>LocalEvents.xaml</DependentUpon>
     </Compile>
     <Compile Include="Report.cs" />
     <Compile Include="ReportIssueWindow.xaml.cs">
       <DependentUpon>ReportIssueWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceRequest.cs" />
+    <Compile Include="ServiceRequestStatusWindow.xaml.cs">
+      <DependentUpon>ServiceRequestStatusWindow.xaml</DependentUpon>
     </Compile>
     <Page Include="LocalEvents.xaml">
       <SubType>Designer</SubType>
@@ -88,6 +95,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="ReportIssueWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ServiceRequestStatusWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
