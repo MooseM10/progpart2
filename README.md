@@ -74,7 +74,7 @@ How to Run the Program
 
 
 
-How to Use the Progra
+How to Use the Program
 Adding a Service Request
 1. Navigate to the "Report an Issue" page.
 2. Enter the following details:
