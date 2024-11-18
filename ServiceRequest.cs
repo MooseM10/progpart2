@@ -8,9 +8,14 @@ namespace MunicipalityApp
 {
     public class ServiceRequest
     {
-        public int RequestId { get; set; }
+        public int RequestID { get; set; }
         public string Description { get; set; }
-        public DateTime RequestDate { get; set; }
-        public string Status { get; set; } // Example statuses: "Pending", "In Progress", "Completed"
+        public string Status { get; set; } = "Pending"; // Default status
+
+        public ServiceRequest(int requestId, string description)
+        {
+            RequestID = requestId;
+            Description = description;
+        }
     }
 }

@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MunicipalityApp"
         mc:Ignorable="d"
-       Title="Service Request Status" Height="350" Width="600">
+     Title="Service Request Status" Height="350" Width="600">
     <Grid>
         <!-- Buttons -->
         <Button Content="Show All Requests" HorizontalAlignment="Left" VerticalAlignment="Top" Width="150" Height="30" Margin="10,10,0,0" Click="ShowAllRequests_Click"/>
